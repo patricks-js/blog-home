@@ -31,7 +31,6 @@ body {
 }
 
 p {
-  color: $white;
   line-height: 150%;
 }
 
@@ -66,4 +65,14 @@ img {
   max-width: 16.114rem;
   display: flex;
   align-items: center;
+}
+
+.post {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.description {
+  display: grid;
+  gap: 1.6rem;
 }
