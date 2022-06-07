@@ -1,0 +1,124 @@
+#header {
+  width: 100%;
+  height: $header-height;
+  background-color: $purple-bg;
+  display: flex;
+  align-items: center;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    #nav {
+      .menu {
+        display: flex;
+        align-items: center;
+        gap: 2.6rem;
+        li {
+          a {
+            color: $light-purple;
+            font-size: 1.8rem;
+            transition: all 0.3s;
+            padding: 0.3rem;
+            position: relative;
+            &::before {
+              content: " ";
+              width: 0.2rem;
+              height: 60%;
+              display: block;
+              background-color: $green;
+              border-radius: 1rem;
+
+              position: absolute;
+              top: 50%;
+              left: -0.5rem;
+              transform: translateY(-50%);
+              transition: 0.3s;
+
+              opacity: 0;
+              visibility: hidden;
+            }
+            &:hover::before,
+            &:hover {
+              color: $white;
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+        }
+      }
+    }
+    .search {
+      display: flex;
+      align-items: center;
+      height: 3.8rem;
+      input[type="search"] {
+        width: 100%;
+        height: 100%;
+        padding: 1.4rem 1.25rem;
+        border-radius: 0.3rem 0 0 0.3rem;
+        border: none;
+        background-color: $dark-bg;
+        font-family: $font-body;
+      }
+      .search__img {
+        cursor: pointer;
+        background-color: $button-bg;
+        height: 100%;
+        padding-inline: 1rem;
+        display: flex;
+        align-items: center;
+
+        border-radius: 0 0.3rem 0.3rem 0;
+        img {
+          max-width: 2.4rem;
+        }
+      }
+    }
+  }
+}
+
+#main {
+  .section1 {
+    width: 100%;
+    height: 100%;
+    background-color: $purple-bg;
+    .container {
+      display: flex;
+      align-items: center;
+      gap: 5rem;
+      .content {
+        flex: 5;
+        display: grid;
+        gap: 1.6rem;
+        .title {
+          font-size: 3.6rem;
+          color: $button-bg;
+        }
+        button {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          gap: 0.8rem;
+          padding-block: 0.5rem;
+          background-color: transparent;
+          border: none;
+          color: $button-bg;
+          font-family: $font-title;
+          font-weight: bold;
+          font-size: 1.8rem;
+          letter-spacing: 0.2rem;
+          img {
+            max-width: 2.4rem;
+          }
+        }
+      }
+      .image {
+        flex: 6;
+        max-width: 57rem;
+      }
+    }
+  }
+  .section2 {
+      
+  }
+}

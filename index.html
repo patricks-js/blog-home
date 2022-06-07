@@ -9,13 +9,153 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <!-- CSS -->
     <link rel="stylesheet" href="/src/css/style.css" />
   </head>
   <body>
-    <h1>Hello Word!</h1>
+    <header id="header">
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="./src/images/logo.svg" alt="Logo the blog" />
+        </a>
+        <nav id="nav">
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Categorias</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+        <div class="search">
+          <input type="search" name="" id="search" placeholder="Buscar" />
+          <div class="search__img">
+            <img src="/src/images/search.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <section class="section1">
+        <div class="container">
+          <div class="content">
+            <h2 class="title">
+              Veja o guia definitivo para conquistar seus objetivos como DEV em
+              2022
+            </h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              cumque quae quam repudiandae adipisci atque, aliquid reprehenderit
+              vero, aperiam sapiente ut molestiae voluptatem incidunt animi
+              minima? Aliquid officiis odit architecto!
+            </p>
+            <button >
+              Veja mais
+              <img
+                src="/src/images/arrow-right.svg"
+                alt="Indicador para ver mais"
+              />
+            </button>
+          </div>
+          <div class="image">
+            <img
+              src="/src/images/featured-image.png"
+              alt="Computador com códigos JavaScript"
+            />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="grid">
+            <div class="post">
+              <div class="post__img">
+                <img src="/src/images/post-1.png" alt="" />
+              </div>
+              <div class="date">Janeiro 04, 2022</div>
+              <div class="description">
+                <h3>Começando no ReactJS em 2022</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Numquam quas tempora accusamus vitae harum tenetur quisquam
+                  perferendis maiores. Iste, aliquam est! Voluptatibus autem rem
+                  reprehenderit suscipit ipsum labore odit impedit!
+                </p>
+              </div>
+            </div>
+            <div class="wrapper-no-img">
+              <div class="post">
+                <div class="date">Janeiro 04, 2022</div>
+                <h3>
+                  Conheça as principais técnicas para conseguir uma vaga
+                  internacional em programação
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis optio quia voluptas accusantium non cumque, eius
+                  corrupti deserunt aut possimus necessitatibus? Tempora et at
+                  possimus assumenda quos, aliquam explicabo nesciunt!
+                </p>
+              </div>
+              <div class="post">
+                <div class="date">Janeiro 04, 2022</div>
+                <h3>Veja a evolução do Front-end na prática</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam, alias delectus, corporis odit ullam ad minima
+                </p>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post__img">
+                <img src="/src/images/post-2.png" alt="" />
+              </div>
+              <div class="date">Janeiro 04, 2022</div>
+              <div class="description">
+                <h3>10 dicas para conseguir a vaga desejada</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Numquam quas tempora accusamus vitae harum tenetur quisquam
+                  perferendis maiores. Iste, aliquam est! Voluptatibus autem rem
+                  reprehenderit suscipit ipsum labore odit impedit!
+                </p>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post__img">
+                <img src="/src/images/post-3.png" alt="" />
+              </div>
+              <div class="date">Janeiro 04, 2022</div>
+              <div class="description">
+                <h3>Deixe seu código mais semântico com essas dicas</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Numquam quas tempora accusamus vitae harum tenetur quisquam
+                  perferendis maiores. Iste, aliquam est! Voluptatibus autem rem
+                  reprehenderit suscipit ipsum labore odit impedit!
+                </p>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post__img">
+                <img src="/src/images/post-4.png" alt="" />
+              </div>
+              <div class="date">Janeiro 04, 2022</div>
+              <div class="description">
+                <h3>Use essas dicas nas suas aplicações mobile</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Numquam quas tempora accusamus vitae harum tenetur quisquam
+                  perferendis maiores. Iste, aliquam est! Voluptatibus autem rem
+                  reprehenderit suscipit ipsum labore odit impedit!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
